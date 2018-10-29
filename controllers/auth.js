@@ -34,7 +34,7 @@ module.exports.login = async function (req, res) {
     } else {
         //user wasn't created
         res.status(404).json({
-            message: 'User with such email didn\' find'
+            message: 'User with such email didn\'t find'
         })
     }
 }
