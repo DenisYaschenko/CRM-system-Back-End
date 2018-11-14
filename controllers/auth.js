@@ -66,3 +66,7 @@ module.exports.register = async function (req, res) {
         }
     }
 }
+
+/**
+ * TODO: create Confirmation Email (nodemailer)
+ */
