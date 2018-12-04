@@ -57,7 +57,7 @@ module.exports.update = async function (req, res) {
         name: req.body.name,
     };
     if (req.file) {
-        updated.imageSrc = req.file.path();
+        updated.imageSrc = req.file.path;
     }
     try {
         const category = await Category.findOneAndUpdate(
