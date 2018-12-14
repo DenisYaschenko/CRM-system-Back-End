@@ -8,6 +8,8 @@
 /app/**/*.js
 /app/**/*.js.map
 
+/config/keys.js
+
 # dependencies
 /node_modules
 /bower_components
@@ -105,6 +107,7 @@ typings/
 
 # Serverless directories
 .serverless
+
 
 
 # End of https://www.gitignore.io/api/node,angular
