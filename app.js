@@ -17,7 +17,7 @@ mongoose.connect(keys.mongoURI, {
         useCreateIndex: true
     })
     .then(() => console.log('MongoDB connected'))
-    .catch(err => console.log(err))
+    .catch(err => console.log(err));
 
 app.use(passport.initialize());
 require('./middleware/passport')(passport);
