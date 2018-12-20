@@ -43,7 +43,7 @@ module.exports.remove = async function (req, res) {
 module.exports.update = async function (req, res) {
     try {
         const position = await Position.findOneAndUpdate({
-            _id: req.body.id,
+            _id: req.body._id,
         }, {
             $set: req.body
         }, {
