@@ -29,8 +29,9 @@ module.exports.create = async function (req, res) {
 
 module.exports.remove = async function (req, res) {
     try {
+        console.log(req.params.id);
         await Position.remove({
-            _id: req.body.id
+            _id: req.params.id
         });
         res.status(200).json({
             message: 'Position was deleted'
